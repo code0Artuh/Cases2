@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/stylen.css" />
+    <title>Editar</title>
+  </head>
+  <body>  
+    <% if(message != "") {  %>
+      <section id="message">
+          <p><%= message %></p> <span id="close">&times;</span>
+      </section>
+  <% }  %>
+    <section id="inscrever">
+        <form id="format">
+       <div>
+        <label for="nome">Id do caso</label>
+        <input type="text" name="nome" id="input_nome" class="resetar" placeholder="Digite o id do caso" required>
+    </div>
+       <div>
+           <button type="submit" id="case">
+            Enviar</button>
+       </div> 
+    </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
